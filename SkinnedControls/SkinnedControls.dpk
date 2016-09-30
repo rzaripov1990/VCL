@@ -1,0 +1,54 @@
+package SkinnedControls;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclie;
+
+contains
+  SC_Playlist in 'SC_Playlist.pas',
+  SC_Button in 'SC_Button.pas',
+  SC_ChechBox in 'SC_ChechBox.pas',
+  SC_CheckButton in 'SC_CheckButton.pas',
+  SC_ContextMenu in 'SC_ContextMenu.pas',
+  SC_DigitalTime in 'SC_DigitalTime.pas',
+  SC_MultiDisplay in 'SC_MultiDisplay.pas',
+  SC_Image in 'SC_Image.pas',
+  List_Class in 'List_Class.pas',
+  SC_RunString in 'SC_RunString.pas',
+  SC_SearchEdit in 'SC_SearchEdit.pas',
+  SC_StatusMode in 'SC_StatusMode.pas',
+  SC_TrackBarEx in 'SC_TrackBarEx.pas',
+  FolderDialog in 'FolderDialog.pas',
+  SC_GraphicEqual in 'SC_GraphicEqual.pas',
+  slcanvas32 in 'slcanvas32.pas';
+
+end.
+

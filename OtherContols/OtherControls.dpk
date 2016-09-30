@@ -1,0 +1,51 @@
+package OtherControls;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl;
+
+contains
+  OC_AppRunStr in 'OC_AppRunStr.pas',
+  OC_BalloonHint in 'OC_BalloonHint.pas',
+  OC_Button in 'OC_Button.pas',
+  OC_CreditsViewX in 'OC_CreditsViewX.pas',
+  OC_FadingCredits in 'OC_FadingCredits.pas',
+  OC_Link in 'OC_Link.pas',
+  OC_Magnetic in 'OC_Magnetic.pas',
+  OC_Playlist in 'OC_Playlist.pas',
+  OC_RichEditViewer in 'OC_RichEditViewer.pas',
+  OC_TaskBar in 'OC_TaskBar.pas',
+  OC_TrayIcon in 'OC_TrayIcon.pas',
+  WaveTimer in 'WaveTimer.pas',
+  OC_InputBox in 'OC_InputBox.pas',
+  OC_ShowMsg in 'OC_ShowMsg.pas',
+  OC_CueSplitter in 'OC_CueSplitter.pas';
+
+end.
